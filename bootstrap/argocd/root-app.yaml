@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/djitai69/gitops-live.git   #https://github.com/<your-user here>/gitops-live.git  
+    repoURL: https://github.com/${GITHUB_USER}/gitops-live.git   # set GITHUB_USER in .env
     targetRevision: HEAD
     path: clusters/dev/infrastructure
   destination:
