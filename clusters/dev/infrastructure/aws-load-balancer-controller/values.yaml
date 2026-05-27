@@ -1,7 +1,13 @@
-clusterName: dev
+clusterName: itai-platform-eks
+
+region: eu-central-1
+
+vpcId: vpc-00b1f3dfcd5f84e66
 
 serviceAccount:
   create: true
   name: aws-load-balancer-controller
   annotations:
-    eks.amazonaws.com/role-arn: <IRSA_ROLE_ARN>
+    eks.amazonaws.com/role-arn: arn:aws:iam::307946654556:role/itai-platform-aws-load-balancer-controller
+    
+

@@ -20,7 +20,7 @@ spec:
       ref: values
   destination:
     server: https://kubernetes.default.svc
-    namespace: aws-load-balancer-controller
+    namespace: kube-system
   syncPolicy:
     automated:
       prune: true
